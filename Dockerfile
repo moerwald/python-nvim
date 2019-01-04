@@ -6,5 +6,6 @@ RUN apt-get update \
 RUN pip3 install neovim pep8 flake8 pyflakes pylint isort
 ADD config/init.vim /root/.config/nvim/
 RUN mkdir /data
+# Install plugins
 RUN timeout 5m nvim || true
 CMD ["nvim", "/data"]
