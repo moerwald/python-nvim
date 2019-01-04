@@ -1,12 +1,11 @@
 FROM ubuntu:latest
 
 # Add PPA to apt repository to fetch latest neovim version  -> see https://github.com/neovim/neovim/wiki/Installing-Neovim
-RUN apt-get update 
-RUN apt-get --force-yes install software-properties-common 
-RUN add-apt-repository ppa:neovim-ppa/stable
+RUN apt-get update \
+ && apt-get -y install software-properties-common \
+ && add-apt-repository ppa:neovim-ppa/stable
 
-RUN apt-get --force-yes install software-properties-common \
- && apt-get --force-yes install -y neovim python-dev python-pip python3 python3-pip python3-dev curl vim exuberant-ctags git ack-grep \
+RUN apt-get  install -y neovim python-dev python-pip python3 python3-pip python3-dev curl vim exuberant-ctags git ack-grep \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip3 install neovim pep8 flake8 pyflakes pylint isort
