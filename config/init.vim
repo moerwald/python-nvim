@@ -67,6 +67,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Mark multiple times with different colors
+Plug 'dimasg/vim-mark'
+
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
 
@@ -135,7 +138,6 @@ Plug 'neomake/neomake'
 " numbering every time you go to normal mode. Author refuses to add a setting
 " to avoid that)
 Plug 'myusuf3/numbers.vim'
-
 
 
 " Tell vim-plug we finished declaring plugins, so it can load them
