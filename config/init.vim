@@ -360,3 +360,6 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.branch = '⭠'
 "let g:airline_symbols.readonly = '⭤'
 "let g:airline_symbols.linenr = '⭡'
+
+" Copy everything to the standard and + register
+map ,y :%y+<cr>:%y<cr>
