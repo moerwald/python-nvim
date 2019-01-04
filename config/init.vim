@@ -68,7 +68,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Mark multiple times with different colors
-Plug 'dimasg/vim-mark'
+" Plug 'dimasg/vim-mark'
 
 " Pending tasks list
 Plug 'fisadev/FixedTaskList.vim'
@@ -154,6 +154,7 @@ endif
 " ============================================================================
 " Vim settings and mappings
 " You can edit them as you wish
+
 
 " tabs and spaces handling
 set expandtab
