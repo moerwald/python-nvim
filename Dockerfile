@@ -7,4 +7,4 @@ RUN pip3 install neovim pep8 flake8 pyflakes pylint isort
 ADD config/init.vim /root/.config/nvim/
 RUN mkdir /data
 RUN timeout 5m nvim || true
-CMD ["nvim", "/src"]
+CMD ["nvim", "/data"]
