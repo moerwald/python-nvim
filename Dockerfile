@@ -11,6 +11,7 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip3 install neovim pep8 flake8 pyflakes pylint isort
 ADD config/init.vim /root/.config/nvim/
+RUN nvim --headless +UpdateRemotePlugins +q
 RUN mkdir /data
 # Install plugins
 RUN timeout 5m nvim || true
