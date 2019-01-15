@@ -36,6 +36,9 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Now the actual plugins:
 
+" folds for YAML
+Plug 'pedrohdz/vim-yaml-folds'
+
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
 
